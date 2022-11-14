@@ -1,5 +1,11 @@
+:root {
+  --primary-color: rgb(43, 255, 0);
+  --secondary-color: azure;
+}
+
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -14,8 +20,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.93);
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +38,54 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
+nav a.nav-link {
+  color: azure
+}
+
+.navbar-nav>li>a.active,
+.navbar-nav>li>a:focus {
+  border-top: 0.1875rem solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+
+
+
+.background {
+  background-color: black;
+  min-height: 100vh;
+}
+
+.homeTitle {
+  padding-top: 300px;
+  font-size: 70px;
+  color: var(--secondary-color);
+  min-height: 100vh;
+}
+
+.aboutTitle {
+  padding-top: 150px;
+  margin-right: 50%;
+  font-size: 70px;
+  color: var(--secondary-color);
+  min-height: 100vh;
+}
+
+.aboutText {
+  padding-top: 0px;
+  margin-left: 50%;
+  font-size: 50px;
+  color: var(--secondary-color);
+}
+
+.nav-item.btn {
+  color: grey;
+}
+
+.navAll {}
